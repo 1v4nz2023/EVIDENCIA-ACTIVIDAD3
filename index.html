@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páginas con Java Script</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="bg-black">
+    <header class="fixed-top shadow-lg">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container menu">
+                <div class="contenedor-logo">
+                    <a href="#" class="titulo">ACTIVIDAD 3</a>
+                    <a href="#"><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="logo" class="logo"></a>
+                </div>
+              </a>
+              
+              <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                      <li class="nav-item">
+                     <a class="nav-link" href="#">Inicio</a>
+                      </li>
+      
+                      <li class="nav-item">
+                          <a class="nav-link" href="#digital">Reloj digital</a>
+                           </li>
+      
+                           <li class="nav-item">
+                              <a class="nav-link" href="#crono">Crónometro</span></a>
+                               </li>
+      
+                               <li class="nav-item">
+                                  <a class="nav-link" href="juego.html">Juego</a>
+                                   </li>
+
+                                   <li class="nav-item">
+                                    <a class="nav-link" href="#roll">Rollover</a>
+                                     </li>
+                  </ul>
+      
+              </div>
+      
+        </div>
+      </nav>
+
+    </header>
+
+<main>
+    <h2 id="digital" class="title">RELOJ DIGITAL</h2>
+    <section id="reloj">
+        <div class="contenedor-reloj">
+                <div id="fecha-actual"></div>
+                <div id="hora-actual"></div>
+        </div>
+
+    </section>
+    <h2 id="crono" class="title2">CRONÓMETRO</h2>
+    <section id="cronómetro">
+        <div class="contenedor-cronometro">
+        <div class="cronos">
+            <div id="m">00</div>
+            <div id="s">:00</div>
+            <div id="ms">:00</div>
+
+        </div>
+        </div>
+
+        <div class="contenedor-botones">
+            <button type="button" class="boton" id="start">Empezar</button>
+            <button type="button" class="boton" id="reset">Resetear</button>
+        </div>
+
+    </section>
+
+    <h2 id="juego" class="title2">VIDEOJUEGO</h2>
+
+    <section id="game">
+        <div class="contenedor-juego">
+            <div class="contenedor-empezar">
+                <a href="juego.html" class="start_game">EMPEZAR A JUGAR</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <h2 id="roll" class="title2">ROLLOVER</h2>
+
+    <section id="rollover">
+        
+
+        <h3 id="text-card">Pase su mouse por la carta para ver que monstruo hay detrás</h3>
+        <div class="contenedor-carta">  
+            <img src="img/back.png" alt="back" id="back" ></div>
+
+    </section>
+
+
+<footer>
+    <div class="contenedor-footer">
+        <h3>Javascript by Ivan Mera ©2023</h3>
+    </div>
+</footer>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+<script src="js/reloj.js"></script>
+<script src="js/crono.js"></script>
+<script src="js/rollover.js"></script>
+</body>
+</html>

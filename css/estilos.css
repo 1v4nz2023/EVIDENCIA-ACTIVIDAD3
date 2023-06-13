@@ -1,0 +1,332 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+}
+
+.nav-button{
+    color: white;
+}
+
+.contenedor-nav{
+    background: linear-gradient(25deg, rgba(126,7,222,1) 32%, rgba(164,63,226,1) 49%, rgba(142,78,231,1) 61%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+
+/* LOGO */
+.contenedor-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo{
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+.logo{
+    max-width: 60px;
+}
+
+/* MENU */
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.748);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.cerrar-menu{
+margin-right: 2rem;
+display: none;
+background-color: transparent;
+border:none;
+}
+
+
+
+/* RELOJ */
+
+h2{
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: white;
+}
+
+.title2{
+    color: white;
+}
+
+#reloj{
+    background-image: url(https://cdn.pixabay.com/photo/2022/03/02/09/17/wallpaper-7042708_1280.jpg);
+    background-position: top;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-reloj{
+background-image: url(../img/lcd.png);
+background-position: top;
+background-repeat: none;
+background-size: cover;
+width: 500px;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+#fecha-actual{
+margin: 5px;
+font-size: 30px;
+}
+
+#hora-actual{
+    margin: 5px;
+    font-size: 30px;
+    }
+
+/* CRONOMETRO */
+
+#cronómetro{
+    background-image: url(https://cdn.create.vista.com/api/media/medium/76494107/stock-photo-old-style-photo-silver-stopwatch?token=);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-cronometro{
+    background-image: url(../img/crono.png);
+    background-position: top;
+    background-repeat: none;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+
+
+.cronos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border-radius: 10px;
+
+}
+
+
+.contenedor-botones{
+    display: grid;
+ 
+}
+
+.boton{
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 400;
+    font-size:30px ;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+    border: none;
+}
+
+.boton:hover{
+    background-color: rgba(255, 255, 255, 0.837);
+    color:blue
+}
+
+/* JUEGO */
+.contenedor-juego{
+    height: 50vh;
+    background-image: url(https://happylearning.tv/wp-content/uploads/2017/11/portada_seccion_juegos-01.png);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-empezar{
+    background-color: green;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.contenedor-empezar:hover{
+    background-color: rgb(15, 197, 15);
+}
+
+.start_game{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* ROLLOVER */
+#rollover{
+    background:url(https://img.konami.com/yugioh/duel_links/images/common/topics_bk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+}
+
+
+
+.contenedor-carta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-carta img{
+    margin: 0 0 50px 0;
+    max-width: 40%;
+}
+
+#text-card{
+    color: white;
+    margin: 50px;
+}
+
+/* FOOTER */
+.contenedor-footer{
+    background-color: #001b35;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu{
+display: none;
+    }
+
+    .cerrar-menu{
+        display: block;
+        cursor: pointer;
+        }
+  }
+
+
+  @media screen and (max-width: 502px) {
+    .contenedor-reloj{
+        width:  60%;
+        height: 50%;
+    
+    }
+
+    #fecha-actual{
+        font-size: 20px;
+    }
+    
+    #hora-actual{
+        font-size: 20px;
+    }
+    
+      }
+
+
+
+
+  @media screen and (max-width: 375px) {
+.titulo{
+    display: none;
+}
+
+.logo{
+    max-width: 70px;
+}
+
+.contenedor-reloj{
+    width:  70%;
+    height: 50%;
+}
+
+#fecha-actual{
+    display: none;
+
+}
+
+
+.contenedor-cronometro{
+
+    width: 150px;
+    height: 150px;
+
+    }
+    .cronos{
+        font-size: 20px;
+      
+    
+    }
+
+  }
+

@@ -20,6 +20,12 @@ body{
     color: white;
 }
 
+
+main p{
+   color: white;
+   font-weight: 600; 
+}
+
 .contenedor-nav{
     background: linear-gradient(25deg, rgba(126,7,222,1) 32%, rgba(164,63,226,1) 49%, rgba(142,78,231,1) 61%);
     display: flex;
